@@ -1,0 +1,54 @@
+body{
+    background-image: url(design/teglafal.jpg);
+    display: block;
+    
+}
+
+header{
+    grid-area: h;
+}
+
+footer{
+    grid-area: f;
+}
+
+h3{
+    grid-area: c;
+}
+
+figure{
+    grid-area: k;
+}
+
+#tartalom{
+    grid: sz;
+}
+
+#fotartalom{
+    grid-area: a;
+    display: grid;
+    grid-template-columns: 1 fr 2fr;
+    grid-template-areas:
+    "c c"
+    "k sz"
+    ;
+}
+
+nav{
+    grid-area: n;
+}
+
+
+
+main{
+    background-color: lightgray;
+    width: 80%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-areas: none
+    "h h "
+    "a n"
+    "f f"
+    ;
+}
